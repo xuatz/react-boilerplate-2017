@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "nodemon": "^1.11.0",
+    "prettier": "^1.4.4",
     "react-scripts": "1.0.7"
   },
   "scripts": {

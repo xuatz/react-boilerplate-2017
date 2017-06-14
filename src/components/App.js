@@ -12,24 +12,24 @@ import configureStore from "../store";
 let store = configureStore();
 
 class App extends Component {
-	render() {
-		return (
-			<Provider store={store}>
-				<SessionCheckModule>
-					<Router>
-						<Layout>
-							<Route exact path="/" component={MainPage} />
-							<Route path="/about" component={AboutPage} />
-							<Route path="/about/a" component={AboutPage} />
-							<Route path="/about/b" component={MainPage} />
-						</Layout>
+    render() {
+        return (
+            <Provider store={store}>
+                <SessionCheckModule>
+                    <Router>
+                        <Layout>
+                            <Route exact path="/" component={MainPage} />
+                            <Route path="/about" component={AboutPage} />
+                            <Route path="/about/a" component={AboutPage} />
+                            <Route path="/about/b" component={MainPage} />
+                        </Layout>
 
-					</Router>
-				</SessionCheckModule>
+                    </Router>
+                </SessionCheckModule>
 
-			</Provider>
-		);
-	}
+            </Provider>
+        );
+    }
 }
 
 export default App;
