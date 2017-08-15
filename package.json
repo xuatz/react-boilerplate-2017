@@ -1,43 +1,43 @@
 {
-  "name": "react-boilerplate-2017",
-  "version": "0.0.1",
-  "private": true,
-  "dependencies": {
-    "axios": "^0.16.1",
-    "bcryptjs": "^2.4.3",
-    "bluebird": "^3.5.0",
-    "body-parser": "^1.17.2",
-    "connect-mongodb-session": "^1.3.0",
-    "connect-redis": "^3.3.0",
-    "cors": "^2.8.3",
-    "express": "^4.15.3",
-    "express-session": "^1.15.3",
-    "grid-styled": "^1.0.1",
-    "lodash": "^4.17.4",
-    "mongoose": "^4.9.10",
-    "passport": "^0.3.2",
-    "passport-local": "^1.0.0",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-redux": "^5.0.5",
-    "react-router-dom": "^4.1.1",
-    "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0",
-    "styled-components": "^1.4.6"
-  },
-  "devDependencies": {
-    "nodemon": "^1.11.0",
-    "prettier": "^1.4.4",
-    "react-scripts": "1.0.7"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "prettier": "prettier --jsx-bracket-same-line --tab-width 4 --write 'src/**/**/*.js'",
-    "dev": "yarn install && npm run dev:client & npm run dev:server",
-    "dev:client": "npm run start",
-    "dev:server": "nodemon src/server/server.js"
-  }
+    "name": "react-boilerplate-2017",
+    "version": "0.0.3",
+    "private": true,
+    "dependencies": {
+        "axios": "^0.16.1",
+        "bcryptjs": "^2.4.3",
+        "bluebird": "^3.5.0",
+        "body-parser": "^1.17.2",
+        "connect-mongodb-session": "^1.3.0",
+        "connect-redis": "^3.3.0",
+        "cors": "^2.8.3",
+        "express": "^4.15.3",
+        "express-session": "^1.15.3",
+        "grid-styled": "^1.0.1",
+        "lodash": "^4.17.4",
+        "mongoose": "^4.9.10",
+        "passport": "^0.3.2",
+        "passport-local": "^1.0.0",
+        "react": "^15.5.4",
+        "react-dom": "^15.5.4",
+        "react-redux": "^5.0.5",
+        "react-router-dom": "^4.1.1",
+        "react-scripts": "1.0.11",
+        "redux": "^3.6.0",
+        "redux-thunk": "^2.2.0",
+        "styled-components": "^1.4.6"
+    },
+    "devDependencies": {
+        "nodemon": "^1.11.0",
+        "prettier": "^1.4.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "prettier": "prettier --jsx-bracket-same-line --tab-width 4 --write 'src/**/**/*.js'",
+        "dev": "yarn install && npm run dev:client & npm run dev:server",
+        "dev:client": "npm run start",
+        "dev:server": "nodemon src/server/server.js"
+    }
 }

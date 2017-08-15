@@ -1,35 +1,22 @@
 const mongoose = require("mongoose");
 mongoose.Promise = require("bluebird");
 
+// mongodb://username:password@host:port/datab
 let dbConnectionString = "mongodb://";
+
+dbConnectionString +=
+    process.env.DB_USER && process.env.DB_PASSWORD
+        ? process.env.DB_USER + ":" + process.env.DB_PASSWORD + "@"
+        : "";
 dbConnectionString += process.env.DB_HOST || "localhost";
-if (process.env.DB_PORT) {
-    dbConnectionString += ":" + process.env.DB_PORT;
-}
+dbConnectionString += process.env.DB_PORT ? ":" + process.env.DB_PORT : "";
 dbConnectionString += "/" + (process.env.DB_NAME || "placeholder_db");
 
-// console.log("process.env.DB_HOST", process.env.DB_HOST);
-// console.log("process.env.DB_NAME", process.env.DB_NAME);
 // console.log("dbConnectionString", dbConnectionString);
 
-let options = Object.assign(
-    {
-        server: {
-            poolSize: 5,
-            auto_reconnect: true,
-            reconnectTries: 3,
-            socketOptions: {
-                keepAlive: 100,
-                connectTimeoutMS: 5000,
-                socketTimeoutMS: 30000
-            }
-        }
-    },
-    {
-        // user: process.env.DB_USER,
-        // pass: process.env.DB_PASSWORD
-    }
-);
+let options = {
+    useMongoClient: true
+};
 
 mongoose.connect(dbConnectionString, options);
 
