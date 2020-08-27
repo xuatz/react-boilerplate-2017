@@ -13,7 +13,7 @@
         "express": "^4.15.3",
         "express-session": "^1.15.3",
         "grid-styled": "^1.0.1",
-        "lodash": "^4.17.4",
+        "lodash": "^4.17.17",
         "mongoose": "^4.9.10",
         "passport": "^0.3.2",
         "passport-local": "^1.0.0",
