@@ -12,7 +12,7 @@
         "cors": "^2.8.3",
         "express": "^4.15.3",
         "express-session": "^1.15.3",
-        "grid-styled": "^1.0.1",
+        "grid-styled": "^5.0.2",
         "lodash": "^4.17.4",
         "mongoose": "^4.9.10",
         "passport": "^0.3.2",
@@ -24,7 +24,7 @@
         "react-scripts": "1.1.4",
         "redux": "^3.6.0",
         "redux-thunk": "^2.2.0",
-        "styled-components": "^1.4.6"
+        "styled-components": "^2.0.0"
     },
     "devDependencies": {
         "nodemon": "^1.11.0",
